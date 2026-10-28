@@ -179,6 +179,9 @@ p { margin: 0 0 22px; }
 .footer-grid { display: grid; grid-template-columns: 1.15fr 1fr 1fr 1.1fr; gap: 55px; font-size: 13px; }
 .footer-grid h2 { font-size: 14px; letter-spacing: .04em; color: var(--blue); margin-bottom: 22px; }
 .footer-grid p { margin: 0 0 20px; line-height: 1.95; }
+.footer-contact-links { display: grid; gap: 8px; }
+.footer-contact-links a { display: flex; align-items: center; gap: 10px; min-height: 26px; }
+.footer-contact-links svg { color: var(--blue); }
 .footer-grid ul { list-style: none; padding: 0; margin: 0; }
 .footer-grid li { margin-bottom: 11px; line-height: 1.7; }
 .footer-grid li a { display: flex; align-items: baseline; gap: 10px; }

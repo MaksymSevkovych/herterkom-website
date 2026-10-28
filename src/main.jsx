@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { ArrowRight, ArrowUpRight, ChevronUp, Clock3, CircuitBoard, Menu, Network, PanelsTopLeft, Phone, X } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, ChevronUp, Clock3, CircuitBoard, Mail, Menu, Network, PanelsTopLeft, Phone, X } from 'lucide-react';
 import { AboutPage, ServicesPage, CareersPage, ContactPage, SparePartsPage, ImprintPage, PrivacyPage } from './SubPages.jsx';
 import useScrollReveal, { revealTarget } from './useScrollReveal.js';
 import CableMotif from './CableMotif.jsx';
@@ -69,7 +69,7 @@ function Footer() {
     <div className="footer-about" data-reveal=""><h2>Über uns</h2><p>Ihr perfekter Servicepartner rund um optische Übertragungsnetze, im Schaltschrankbau und Automotive.</p></div>
     <div data-reveal="60"><h2>Sitemap</h2><ul>{[['/','Home'],['/ueberuns/','Über uns'],['/karriere/','Karriere'],['/kontakt/','Kontakt'],['/impressum/','Impressum'],['/datenschutzerklaerung/','Datenschutzerklärung']].map(([href,label])=><li key={href}><a href={href}>{label}</a></li>)}</ul></div>
     <div data-reveal="120"><h2>Leistungen</h2><ul><li><a href="/leistungen/">Telekommunikation</a><ul><li><a href="/ersatzteillager/">Ersatzteile</a></li></ul></li><li><a href="/leistungen/#plans">Schaltschranbau</a></li><li><a href="/leistungen/#Automotive">Automotive</a></li></ul></div>
-    <div className="footer-contact" data-reveal="180"><h2>Kontakt</h2><p><a href="tel:+4971414884380">✆ +49 7141 488 438-0</a><br/><a href="mailto:info@herterkom.de">✉ E-Mail</a></p><p>Herterkom GmbH<br/>Zeppelinstraße 5/1<br/>71679 Asperg</p></div>
+    <div className="footer-contact" data-reveal="180"><h2>Kontakt</h2><p className="footer-contact-links"><a href="tel:+4971414884380"><Phone size={18} strokeWidth={1.75} aria-hidden="true"/><span>+49 7141 488 438-0</span></a><a href="mailto:info@herterkom.de"><Mail size={18} strokeWidth={1.75} aria-hidden="true"/><span>E-Mail</span></a></p><p>Herterkom GmbH<br/>Zeppelinstraße 5/1<br/>71679 Asperg</p></div>
   </div></footer><div className="copyright">© Copyright 2025 Herterkom GmbH</div>{backTopVisible && <a href="#top" className="back-top" aria-label="Nach oben"><ChevronUp size={18}/></a>}</>;
 }
 const routes = { '/': [HomePage, 'Ihr perfekter Servicepartner'], '/ueberuns/': [AboutPage, 'Über uns'], '/leistungen/': [ServicesPage, 'Leistungen'], '/karriere/': [CareersPage, 'Karriere'], '/kontakt/': [ContactPage, 'Kontakt'], '/ersatzteillager/': [SparePartsPage, 'Ersatzteile'], '/impressum/': [ImprintPage, 'Impressum'], '/datenschutzerklaerung/': [PrivacyPage, 'Datenschutzerklärung'] };
